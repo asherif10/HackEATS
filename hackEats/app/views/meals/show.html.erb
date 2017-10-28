@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Meal:</strong>
+  <%= @meal.meal_id %>
+</p>
+
+<p>
+  <strong>Total calories:</strong>
+  <%= @meal.total_calories %>
+</p>
+
+<%= link_to 'Edit', edit_meal_path(@meal) %> |
+<%= link_to 'Back', meals_path %>

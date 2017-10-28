@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_id: 1
+  user_name: MyString
+  nutrition_id: 1
+  meal_id: 1
+  date_logged: 2017-10-28 13:31:24
+
+two:
+  item_id: 1
+  user_name: MyString
+  nutrition_id: 1
+  meal_id: 1
+  date_logged: 2017-10-28 13:31:24

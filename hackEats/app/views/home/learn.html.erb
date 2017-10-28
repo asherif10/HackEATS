@@ -1,0 +1,148 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> HackEats </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Fantastic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<link href="css/carousel.css" type="text/css" rel="stylesheet" media="all"> 
+
+<link href="css/mine.css" type="text/css" rel="stylesheet" media="all">
+
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<!-- //Custom Theme files --> 
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>  
+<!-- //js -->
+<!-- web-fonts -->  
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+</head>
+<body>  
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+		<div class="container"> 
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1 class="w3ls-logo"><a class="navbar-brand" href="index.html"> hackEATS </a></h1>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse top-w3lnav">
+						<ul class="nav navbar-nav" id="navbarnav">
+							<li><a href="#login" class="scroll"> overview </a></li>
+							<li><%= link_to "add a meal", learn_path %></li>
+							<li><a href="#login" class="scroll"> learn about your diet </a></li>
+							<li><a href="#login" class="scroll"> account settings </a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div> 
+				</div>
+			</nav> 
+		</div>
+    </div>
+	<!-- //navbar -->
+
+    <!-- short codes -->
+	<div class="codes agileitsbg2">
+		<div class="container">    
+			<div id="about" class="grid_3 grid_5 w3-agileits">
+				<h3> History </h3>
+				<p style="font-size:20px; margin-top:10px;"> Based on your meal history, your calorie and protein intake is a bit lower than average. Your diet is also not providing sufficient Vitamin C and Vitamin D. </p>
+				<br> 
+				<h3> Reccommended Food </h3>
+
+				<div class="col-md-4 col-sm-4 col-xs-4 w3ltext-grids">
+					<h4 class="w3t-text"> Kiwifruit  </h4>
+					<img src = "/assets/images/kiwi.jpg" class="image-responsive" width="100%">
+					<br><br>
+					<p> Kiwifruit is an excellent source of vitamin C and vitamin K as well as a very good source of copper and dietary fiber.</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3ltext-grids">
+					<h4 class="w3t-text"> Eggs </h4>
+					<img src = "/assets/images/eggs.jpeg" class="image-responsive" width="100%">
+					<br><br>
+					<p> Along with milk, eggs contain the highest biological value (or gold standard) for protein. </p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3ltext-grids">
+					<h4 class="w3t-text"> Salmon </h4>
+					<img src = "/assets/images/salmon.jpg" class="image-responsive" width="100%">
+					<br><br>
+					<p> Salmon is packed with essential nutrients -- especially protein, omega-3 fatty acids, vitamins and minerals. Grilling salmon is one of the most heart-healthy ways to prepare it.</p>
+				</div>
+				
+				<div class="clearfix"> </div>
+				<script>$(function () {
+				  $('[data-toggle="tooltip"]').tooltip()
+				})</script> 
+			</div>
+		</div>	
+	</div>	
+	
+	
+	<!-- footer -->
+	<div class="w3copy-agile">
+		<div class="container">  
+			<p class="footer-class">© 2017 Fantastic. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+	</div>
+	<!-- //footer -->   
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!--scrolling js--> 
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script> 
+	<!--//scrolling js-->
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

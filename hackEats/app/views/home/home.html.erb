@@ -1,0 +1,269 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> HackEats </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Fantastic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">   
+<link href="css/carousel.css" type="text/css" rel="stylesheet" media="all"> 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+<link href="css/mine.css" type="text/css" rel="stylesheet" media="all">
+
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<!-- //Custom Theme files --> 
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>  
+<!-- //js -->
+<!-- web-fonts -->  
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+</head>
+<body>  
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+		<div class="container"> 
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1 class="w3ls-logo"><%= link_to "HackEats", root_path %><a class="navbar-brand"></h1>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse top-w3lnav">
+						<ul class="nav navbar-nav" id="navbarnav">
+							<li><a href="#login" class="scroll"> overview </a></li>
+                            <li><%= link_to "add a meal", learn_path %></li>
+							<li><a href="#login" class="scroll"> add a meal </a></li>
+							<li><a href="#login" class="scroll"> learn about your diet </a></li>
+							<li><a href="#login" class="scroll"> account settings </a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div> 
+				</div>
+			</nav> 
+		</div>
+    </div>
+	<!-- //navbar -->
+	<!-- //banner -->
+    <!-- short codes -->
+	<div class="codes agileitsbg2">
+		<div class="container">   
+            <div id="about" class="grid_3 grid_5 w3-agileits">
+				<div id="container" class="col-md-6 col-sm-12 w3ltext-grids">
+					<script type="text/javascript">
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'solidgauge',
+                            marginTop: 50
+                        },
+                        
+                        
+                        title: {
+                            text: 'Today',
+                            style: {
+                                fontSize: '26px',
+                                fontFamily: 'Roboto',
+                                color: "#00BCD4",
+                                fontWeight: '300'
+                            }
+                        },
+
+
+                        tooltip: {
+                            borderWidth: 0,
+                            backgroundColor: 'none',
+                            shadow: false,
+                            style: {
+                                fontSize: '16px'
+                            },
+                            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span>',
+                            positioner: function (labelWidth) {
+                                return {
+                                    x: 200 - labelWidth / 2,
+                                    y: 180
+                                };
+                            }
+                        },
+
+                        pane: {
+                            startAngle: 0,
+                            endAngle: 360,
+                            background: [{ // Track for Move
+                                outerRadius: '100%',
+                                innerRadius: '88%',
+                                backgroundColor: Highcharts.Color("#00BCD4")
+                                    .setOpacity(0.3)
+                                    .get(),
+                                borderWidth: 0
+                            }]
+                        },
+
+                        yAxis: {
+                            min: 0,
+                            max: 100,
+                            lineWidth: 0,
+                            tickPositions: []
+                        },
+
+                        plotOptions: {
+                            solidgauge: {
+                                dataLabels: {
+                                    enabled: false
+                                },
+                                linecap: 'round',
+                                stickyTracking: false,
+                                rounded: true
+                            }
+                        },
+
+                        series: [{
+                            name: ' ',
+                            data: [{
+                                color: "#00BCD4",
+                                radius: '112%',
+                                innerRadius: '88%',
+                                y: 32
+                            }]
+
+                        }]
+                    },
+
+                    /**
+                     * In the chart load callback, add icons on top of the circular shapes
+                     */
+                    function callback() {
+
+
+
+                    });
+                    </script>
+                    
+                    <div style="width: 100%; text-align: center;">
+                        <h4 class="w3t-text" style="font-size: 30px"> <b>490</b> / 1,500 </h4>
+                        <p>calories logged</p>
+                    </div>
+				</div>
+				<div class="col-md-6 col-sm-12 w3ltext-grids">
+					<h4 class="w3t-text"> Breakfast </h4>
+                        <!-- p>Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p> -->
+                        <div class="bs-docs-example">
+                        <table class="table table-hover">
+                        <tbody>
+                        <tr>
+                          <td> <img style="max-width: 20px;" src="images/sandwich.png"> </td>
+                          <td> Bacon, cheddar & egg sandwich </td>
+                          <td> 400 calories </td>
+                        </tr>
+                        <tr>
+                          <td> <img style="max-width: 20px;" src="images/coffee.png"> </td>
+                          <td> Iced Coffee </td>
+                          <td> 90 calories </td>
+                        </tr> 
+                        </tbody>
+                        </table>
+                        </div>
+<!--                    <h4 class="w3t-text"> Lunch </h4>-->
+<!--                        <div class="bs-docs-example">-->
+<!--
+                        <table class="table table-hover">
+                        <tbody>
+                        <tr>
+                          <td> <img style="max-width: 20px;" src="images/pizza.png"> </td>
+                          <td> Pepperoni pizza </td>
+                          <td> 250 calories </td>
+                        </tr>
+                        <tr>
+                          <td> <img style="max-width: 20px;" src="images/salad.png"> </td>
+                          <td> Side salad </td>
+                          <td> 100 calories </td>
+                        </tr> 
+                        <tr>
+                          <td> <img style="max-width: 20px;" src="images/lemonade.png"> </td>
+                          <td> Pink lemonade </td>
+                          <td> 120 calories </td>
+                        </tr> 
+                        </tbody>
+                        </table>
+-->
+<!--                    </div> -->
+				</div>
+
+				<div class="clearfix"> </div>
+				<script>$(function () {
+				  $('[data-toggle="tooltip"]').tooltip()
+				})</script> 
+
+
+            </div> 
+		</div>	
+	</div>	
+
+	<!-- footer -->
+	<div class="w3copy-agile">
+		<div class="container">  
+			<p class="footer-class">© 2017 Fantastic. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+	</div>
+	<!-- //footer -->   
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!--scrolling js--> 
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script> 
+	<!--//scrolling js-->
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
